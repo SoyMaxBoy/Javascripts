@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Mi Tienda</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">MaxStore</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Productos</a
+              >
+              <a id="checkout" class="active btn btncheckout" onclick="pay()">
+                Carrito
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="espacio"></div>
+      <h1 class="text-center">Mis Productos</h1>
+      <div class="product-container">
+        <ul>
+          <li class="card">
+            <a class="card-image" target="_blank">
+              <img src="img/productos/BCAA.jpg" alt="" />
+            </a>
+            <a class="card-description" target="_blank">
+              <h2 class="text-center">Amino acidos</h2>
+              <h3 class="text-center price">$2500</h3>
+              <button class="button-add" onclick="add('Amino acido', 2500)">
+                Agregar
+              </button>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card-image" target="_blank">
+              <img src="img/productos/creactor.jpg" alt="" />
+            </a>
+            <a class="card-description" target="_blank">
+              <h2 class="text-center">Creatina</h2>
+              <h3 class="text-center price">$1500</h3>
+              <button class="button-add" onclick="add('Creatina', 1500)">
+                Agregar
+              </button>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card-image" target="_blank">
+              <img src="img/productos/Vainilla.jpg" alt="" />
+            </a>
+            <a class="card-description" target="_blank">
+              <h2 class="text-center">Proteina de vainilla</h2>
+              <h3 class="text-center price">$4000</h3>
+              <button
+                class="button-add"
+                onclick="add('Proteina Vainilla', 4000)"
+              >
+                Agregar
+              </button>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card-image" target="_blank">
+              <img src="img/productos/whey.jpg" alt="" />
+            </a>
+            <a class="card-description" target="_blank">
+              <h2 class="text-center">Proteina Whey</h2>
+              <h3 class="text-center price">$4500</h3>
+              <button class="button-add" onclick="add('Proteina Whey', 4500)">
+                Agregar
+              </button>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card-image" target="_blank">
+              <img src="img/productos/bizcocho.jpg" alt="" />
+            </a>
+            <a class="card-description" target="_blank">
+              <h2 class="text-center">Proteina bizcocho</h2>
+              <h3 class="text-center price">$4100</h3>
+              <button
+                class="button-add"
+                onclick="add('Proteina Bizcocho', 4100)"
+              >
+                Agregar
+              </button>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card-image" target="_blank">
+              <img src="img/productos/Extreme.jpg" alt="" />
+            </a>
+            <a class="card-description" target="_blank">
+              <h2 class="text-center">Proteina Extrema</h2>
+              <h3 class="text-center price">$6000</h3>
+              <button
+                class="button-add"
+                onclick="add('Proteina Extrema 2000', 6000)"
+              >
+                Agregar
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Copyright -->
+      <div class="Footer-body">
+        <div class="footer-social">
+          <section>
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.facebook.com/Davidmarte123/"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.instagram.com/davidmarte345/"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Github -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://github.com/SoyMaxBoy"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+        </div>
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2022 Copyright:
+          <a class="text-white" href="index.html">Maxwellmarte.com</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
